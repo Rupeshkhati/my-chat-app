@@ -43,7 +43,7 @@ export const signup = async (req, res) => {
             _id: newUser._id,
             fullName: newUser.fullName,
             username: newUser.username,
-            profilePic: newUser.profilepic,
+            profilePic: newUser.profilePic,
         });
          } else{
             res.status(400).json({ error: "Invalid user data" });
@@ -71,7 +71,7 @@ export const login = async (req, res) => {
             _id: user._id,
             fullName: user.fullName,
             username: user.username,
-            profilePic: user.profilePic,
+            profilepic: user.profilepic,
         });
 
     } catch (error) {
